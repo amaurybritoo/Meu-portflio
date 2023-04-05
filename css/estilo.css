@@ -1,0 +1,47 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #20B2AA;
+    border-bottom: 10px solid #000;
+    padding: 10px 20px;
+}
+
+nav {
+    text-align: right;
+}
+
+a {
+    display: inline-flex;
+    align-items: center;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: "Minecraft";
+    font-weight: 500;
+    text-decoration: none;
+    /* tira a marcação da do texto */
+    margin-right: 30px;
+    /* da espaço entre o texto no caso skills, projetos, sobre... */
+}
+
+a:before {
+    content: '';
+    display: inline-block;
+    background-color: #FA8072;
+    height: 10px;
+    width: 10px;
+    margin-right: 10px;
+}
+
+#button {
+    display: inline-block;
+    background-color: #FA8072;
+    padding: 18px 20px;
+    /*sombra para direita pra esquerda, dps pra cima pra baixo e dps distribui os pixels pra borda(esfumaça)*/
+    box-shadow: 5px 5px 0px #0000007a;
+    margin: 0;
+    transition: transform 100ms linear;
+}
+
+#button:hover {
+    transform: scale(1.05);
+}
